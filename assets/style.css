@@ -1,0 +1,192 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+:root{
+    --background: rgb(75, 68, 62);
+    --t_background: rgb(97, 90, 84);
+    --t_h_background: rgb(41, 38, 33);
+    --t_border: rgb(38, 34, 32);
+    --t_foreground: rgb(74, 67, 61);
+    --text_color:rgb(242, 242, 242);
+    --header_color:rgb(245, 181, 13);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text_color);
+}
+
+#header {
+    font-size: 48px;
+    padding: 10px;
+    padding-top:0px;
+    color:var(--header_color);
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .itemlist {
+        border: 3px solid var(--t_border);
+        background-color: var(--t_background);
+        border-collapse: collapse;
+        border-radius: 10px;
+        float: left;
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .itemlist th {
+        font-size: 24px;
+        padding: 5px;
+        border-bottom: 3px solid var(--t_border);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        background-color: var(--t_h_background);
+    }
+
+    .itemlist td {
+        border-top: 2px solid var(--t_border);
+        text-align: center;
+    }
+
+    .item_image {
+        padding-left:4px;
+        padding-top:4px;
+        width:90px;
+    }
+
+        .item_image img {
+            width:90px;
+            border-radius: 12px;
+        }
+
+    .item_body {
+        width: 280px;
+    }
+
+        .item_title {
+            font-size: 22px;
+        }
+
+        .item_description {
+            font-size: 14px;
+        }
+
+    .item_add {
+        width: 40px;
+    }
+
+    .item_buttons {
+        padding:3px;
+    }
+
+    .item_buttons img:first-child {
+        margin-bottom: 5px;
+    }
+
+    .orderlist {
+        border: 3px solid var(--t_border);
+        background-color: var(--t_background);
+        border-radius: 10px;
+        border-collapse: collapse;
+        float: left;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .orderlist th {
+        font-size: 24px;
+        padding: 5px;
+        border-bottom:3px solid var(--t_border);
+        background-color: var(--t_h_background);
+        /* width:300px; */
+    }
+
+    .orderlist td {
+        font-size: 22px;
+    }
+
+    .orderheader {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .ordercounter {
+        text-align: center;
+        padding: 0px 5px;
+    }
+
+    .orderimage {
+        padding: 0px;
+    }
+
+    .orderimage img {
+        margin-top:5px;
+        margin-right: 5px;
+        width:40px;
+        border-radius: 8px;
+    }
+
+    .ordertitle {
+        width:310px;
+    }
+
+    .orderprice {
+        width:100px;
+        padding-right:5px;
+        text-align: right;
+    }
+
+    .ordertotal {
+        border-top: 2px solid var(--t_border);
+        text-align: right;
+        font-weight: normal;
+    }
+
+    .ordertotalprice {
+        border-top: 2px solid var(--t_border);
+        text-align: right;
+        font-weight: normal;
+    }
+
+    .coupontotal {
+        background-color: var(--t_background);
+        text-align: right;
+        padding-right:5px;
+        font-size: 18px !important;
+    }
+
+    .coupontotalprice {
+        background-color: var(--t_background);
+        text-align: right;
+        padding-right:8px;
+        font-size: 18px !important;
+    }
+
+    #reload {
+        text-align: center;
+        padding:5px;
+        border-top: 3px solid var(--t_border);
+        background-color: var(--t_h_background);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    #reload button{
+        background-color: rgb(255, 91, 91);
+        font-weight: bold;
+        font-size: 16px;
+        color:rgb(219, 219, 219);
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+    }
