@@ -4,78 +4,32 @@
         "S Part":{
             "description": "Single S Part",
             "image": "s-part.png",
-            "price": 80
+            "price": 454
         },
         "A Part":{
             "description": "Single A Part",
-            "image": "s-part.png",
-            "price": 80
+            "image": "a-part.png",
+            "price": 338
         },
         "B Part":{
             "description": "Single B Part",
-            "image": "s-part.png",
-            "price": 80
+            "image": "b-part.png",
+            "price": 134
         },
         "C Part":{
             "description": "Single C Part",
-            "image": "s-part.png",
-            "price": 80
+            "image": "c-part.png",
+            "price": 111
         },
         "D Part":{
             "description": "Single D Part",
-            "image": "s-part.png",
-            "price": 80
+            "image": "d-part.png",
+            "price": 90
         },
         "M Part":{
             "description": "Single M Part",
-            "image": "s-part.png",
-            "price": 80
-        }
-    },
-    "1 Across1111":{
-        "type": "items",
-        "Sweet Tea":{
-            "description": "Made with the finest fruits and tea leaves",
-            "image": "tea.png",
-            "price": 80
-        },
-        "Root Beer":{
-            "description": "With hints of vanilla and sassafras",
-            "image": "rootbeer.png",
-            "price": 70
-        },
-        "Beer":{
-            "description": "Beer",
-            "image": "beer.png",
-            "price": 60
-        },
-        "Whiskey":{
-            "description": "Whiskey",
-            "image": "whiskey.png",
-            "price": 60
-        },
-        "Vodka":{
-            "description": "Vodka",
-            "image": "vodka.png",
-            "price": 60
-        }
-    },
-    "Miscelaneous":{
-        "type": "items",
-        "Whiskey Tincture":{
-            "description": "Makes everything feel better",
-            "image": "tincture.png",
-            "price": 70
-        },
-        "Lost MC Cigarettes":{
-            "description": "Light it up",
-            "image": "cigarettes.png",
-            "price": 100
-        },
-        "Lost Plushie":{
-            "description": "The Lost MC mascot",
-            "image": "plushie.png",
-            "price": 1000
+            "image": "m-part.png",
+            "price": 134
         }
     },
     "1 Across":{
@@ -86,41 +40,113 @@
             "items":{
                 "S Part":10
             },
-            "price":230
+            "price":4537
         },
-        "Mechanics Meal":{
-            "description": "Mechanics Meal",
-            "image": "menu.png",
+        "1 Across A":{
+            "description": "10 A Parts",
+            "image": "a-across.png",
             "items":{
-                "Dirty Fries":1, 
-                "IronHog Pork Sandwich":1, 
-                "Sweet Tea":1
+                "A Part":10
             },
-            "price":230
+            "price":3375
         },
-        "Hungry Man Combo":{
-            "description": "Hungry Man Combo",
-            "image": "menu.png",
+        "1 Across B":{
+            "description": "10 S Parts",
+            "image": "b-across.png",
             "items":{
-                "Dirty Fries":2, 
-                "Heart Attack Burger":3, 
-                "Root Beer":2
+                "B Part":10
             },
-            "price":540
+            "price":1344
         },
-        "Gimme the 9s":{
-            "description": "Gimme the Nines",
-            "image": "menu.png",
+        "1 Across C":{
+            "description": "10 C Parts",
+            "image": "c-across.png",
             "items":{
-                "Dirty Fries":2, 
-                "Heart Attack Burger":2, 
-                "Chicken Wings":2,
-                "IronHog Pork Sandwich":2,
-                "Sweet Tea":2,
-                "Root Beer":2,
-                "Whiskey Tincture":2
+                "C Part":10
             },
-            "price":999
+            "price":1114
+        },
+        "1 Across D":{
+            "description": "10 D Parts",
+            "image": "d-across.png",
+            "items":{
+                "D Part":10
+            },
+            "price":896
+        },
+        "1 Across M":{
+            "description": "10 M Parts",
+            "image": "m-across.png",
+            "items":{
+                "M Part":10
+            },
+            "price":1344
+        }
+    },
+    "Car Care":{
+        "type": "items",
+        "NOS":{
+            "description": "Nitrous make you go vroom",
+            "image": "nos.png",
+            "price": 1800
+        },
+        "7 Day Wax":{
+            "description": "Polish that lasts for 7 days",
+            "image": "wax_7day.png",
+            "price": 2130
+        },
+        "3 Day Wax":{
+            "description": "Polish that lasts for 3 days",
+            "image": "wax_3day.png",
+            "price": 1290
+        },
+        "1 Day Wax":{
+            "description": "Polish that lasts for 1 day",
+            "image": "wax_1day.png",
+            "price": 308
+        }
+    },
+    "Miscelaneous":{
+        "type": "items",
+        "Lockpick":{
+            "description": "Regular Lockpick",
+            "image": "pick_reg.png",
+            "price": 400
+        },
+        "Advanced Lockpick":{
+            "description": "Advanced Lockpick",
+            "image": "pick_adv.png",
+            "price": 3500
+        },
+        "Radio":{
+            "description": "Radio > 90%",
+            "image": "radio.png",
+            "price": 2000
+        },
+        "Radio < 90":{
+            "description": "Radio < 90%",
+            "image": "radio.png",
+            "price": 1800
+        },
+        "Radio < 80":{
+            "description": "Radio < 80%",
+            "image": "radio.png",
+            "price": 1600
+        },
+        "Radio < 70":{
+            "description": "Radio < 70%",
+            "image": "radio.png",
+            "price": 1400
+        },
+        "Radio < 60":{
+            "description": "Radio < 60%",
+            "image": "radio.png",
+            "price": 1200
+        },
+        "Radio < 50":{
+            "description": "Radio < 50%",
+            "image": "radio.png",
+            "price": 1000
         }
     }
 }

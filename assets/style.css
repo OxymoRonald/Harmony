@@ -4,13 +4,13 @@
 }
 
 :root{
-    --background: rgb(75, 68, 62);
-    --t_background: rgb(97, 90, 84);
-    --t_h_background: rgb(41, 38, 33);
+    --background: rgb(17, 0, 32);
+    --t_background: rgb(107, 7, 114);
+    --t_h_background: rgb(51, 0, 95);
     --t_border: rgb(38, 34, 32);
     --t_foreground: rgb(74, 67, 61);
     --text_color:rgb(242, 242, 242);
-    --header_color:rgb(245, 181, 13);
+    --header_color:rgb(207, 38, 138);
 }
 
 body {
