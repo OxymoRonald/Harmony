@@ -9,27 +9,27 @@
         "A Part":{
             "description": "Single A Part",
             "image": "a-part.png",
-            "price": 338
+            "price": 310
         },
         "B Part":{
             "description": "Single B Part",
             "image": "b-part.png",
-            "price": 134
+            "price": 210
         },
         "C Part":{
             "description": "Single C Part",
             "image": "c-part.png",
-            "price": 111
+            "price": 100
         },
         "D Part":{
             "description": "Single D Part",
             "image": "d-part.png",
-            "price": 90
+            "price": 60
         },
         "M Part":{
             "description": "Single M Part",
             "image": "m-part.png",
-            "price": 134
+            "price": 100
         }
     },
     "1 Across":{
@@ -48,7 +48,7 @@
             "items":{
                 "A Part":10
             },
-            "price":3375
+            "price":3100
         },
         "1 Across B":{
             "description": "10 S Parts",
@@ -56,7 +56,7 @@
             "items":{
                 "B Part":10
             },
-            "price":1344
+            "price":2100
         },
         "1 Across C":{
             "description": "10 C Parts",
@@ -64,7 +64,7 @@
             "items":{
                 "C Part":10
             },
-            "price":1114
+            "price":1000
         },
         "1 Across D":{
             "description": "10 D Parts",
@@ -72,7 +72,7 @@
             "items":{
                 "D Part":10
             },
-            "price":896
+            "price":600
         },
         "1 Across M":{
             "description": "10 M Parts",
@@ -80,7 +80,7 @@
             "items":{
                 "M Part":10
             },
-            "price":1344
+            "price":1000
         }
     },
     "Car Care":{
@@ -88,22 +88,22 @@
         "NOS":{
             "description": "Nitrous make you go vroom",
             "image": "nos.png",
-            "price": 2000
+            "price": 799
         },
         "7 Day Wax":{
             "description": "Polish that lasts for 7 days",
             "image": "wax_7day.png",
-            "price": 2130
+            "price": 2500
         },
         "3 Day Wax":{
             "description": "Polish that lasts for 3 days",
             "image": "wax_3day.png",
-            "price": 1290
+            "price": 1250
         },
         "1 Day Wax":{
             "description": "Polish that lasts for 1 day",
             "image": "wax_1day.png",
-            "price": 308
+            "price": 100
         }
     },
     "Miscelaneous":{
@@ -111,42 +111,12 @@
         "Lockpick":{
             "description": "Regular Lockpick",
             "image": "pick_reg.png",
-            "price": 400
+            "price": 250
         },
         "Advanced Lockpick":{
             "description": "Advanced Lockpick",
             "image": "pick_adv.png",
-            "price": 3500
+            "price": 3000
         },
-        "Radio":{
-            "description": "Radio > 90%",
-            "image": "radio.png",
-            "price": 2000
-        },
-        "Radio < 90":{
-            "description": "Radio < 90%",
-            "image": "radio.png",
-            "price": 1800
-        },
-        "Radio < 80":{
-            "description": "Radio < 80%",
-            "image": "radio.png",
-            "price": 1600
-        },
-        "Radio < 70":{
-            "description": "Radio < 70%",
-            "image": "radio.png",
-            "price": 1400
-        },
-        "Radio < 60":{
-            "description": "Radio < 60%",
-            "image": "radio.png",
-            "price": 1200
-        },
-        "Radio < 50":{
-            "description": "Radio < 50%",
-            "image": "radio.png",
-            "price": 1000
-        }
     }
 }
