@@ -95,10 +95,44 @@ function posOrder(name, modifier){
         // Display order total
         orderTable += "<tr><th colspan='3' class='ordertotal'>Total</th><th class='ordertotalprice'>$ " + orderTotal + "</th></tr>";
         
-        // Apply discount
+        // Apply global discount
         // var discountPercentage = 15;
         // orderTable += "<tr><td colspan='3' class='coupontotal'>Coupon Price (-" + discountPercentage + "%)</td><td class='coupontotalprice'>$ " + (Math.ceil(orderTotal * (100 - discountPercentage) / 100 )) + "</td></tr>";
         
+        // Create MC 20 discount on M parts. Basically do the same as above, just minus the discount on M parts.
+        // Discount percentage
+        var mcDiscountPercentage = 20;
+        // Discounted items
+        const mcDiscountItems = ["M Part","1 Across M"];
+        var mcDiscountTotal = 0
+        //const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        //document.getElementById("demo").innerHTML = fruits.includes("Mango");
+
+        // For each item on in orderobject
+        for(item in orderObject){
+            // Iterate through members to find item
+            for(group in jsonData){
+                // If item is in group
+                if(jsonData[group].hasOwnProperty(item)){
+                    // Check if M part
+                    if(mcDiscountItems.includes(item)){
+                        //console.log("Discount: " + item);
+                        price = Math.ceil((orderObject[item] * jsonData[group][item].price) * (100 - mcDiscountPercentage) / 100);
+                        // (Math.ceil(orderTotal * (100 - discountPercentage) / 100 ))
+                    }
+                    else{
+                        //console.log("NO discount: " + item);
+                        price = (orderObject[item] * jsonData[group][item].price);
+                    }
+                    // Add price to total
+                    mcDiscountTotal += price;
+                }
+            }
+            //console.log("Item: " + item);
+        }
+        // Add display
+        orderTable += "<tr><td colspan='3' class='coupontotal'>MC Discounted Price (-" + mcDiscountPercentage + "% on M Parts)</td><td class='coupontotalprice'>$ " + mcDiscountTotal + "</td></tr>";
+
         // Create a total count of items to get
         // Add header for total items
         orderTable += "<tr><th colspan='4'>Itemlist</th></tr>";
@@ -133,7 +167,7 @@ function posOrder(name, modifier){
         for(item in itemTotals){
             for(group in jsonData){
                 if(jsonData[group].hasOwnProperty(item)){
-                    console.log("Menu item: " + item + " found in " + group);
+                    // console.log("Menu item: " + item + " found in " + group);
                     orderTable += "<tr>";
                     orderTable += "<td class='ordercounter'>" + itemTotals[item] + "</td>";
                     orderTable += "<td class='orderimage'><img src='products/"+ jsonData[group][item].image +"'/></td>";
