@@ -169,10 +169,14 @@ body {
     }
 
     .ordertotal {
+        text-transform: uppercase;
+        font-family: Mad_Hacker;
+        font-size: 20px;
         border-top: 2px solid var(--t_border);
         text-align: right;
-        font-weight: normal;
     }
+
+
 
     #total_text{
         font-size: 10px;
@@ -186,9 +190,12 @@ body {
     }
 
     .ordertotalprice {
+        text-transform: uppercase;
+        /* font-family: Mad_Hacker; */
+        font-size: 20px;
+        font-weight: bold;
         border-top: 2px solid var(--t_border);
         text-align: right;
-        font-weight: normal;
     }
 
     .coupontotal {
@@ -196,6 +203,7 @@ body {
         text-align: right;
         padding-right:5px;
         font-size: 18px !important;
+        color: #f0f0f090;
     }
 
     .coupontotalprice {
@@ -203,6 +211,7 @@ body {
         text-align: right;
         padding-right:8px;
         font-size: 18px !important;
+        color: #f0f0f090;
     }
 
 #reload {
