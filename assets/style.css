@@ -3,51 +3,77 @@
     padding: 0; 
 }
 
+@font-face {
+    font-family: Mad_Hacker;
+    src: url(Mad_Hacker_Italic.otf);
+}
+
 :root{
-    --background: rgb(17, 0, 32);
-    --t_background: rgb(107, 7, 114);
-    --t_h_background: rgb(51, 0, 95);
-    --t_border: rgb(38, 34, 32);
-    --t_foreground: rgb(74, 67, 61);
-    --text_color:rgb(242, 242, 242);
-    --header_color:rgb(207, 38, 138);
+    --text_color:rgb(240, 240, 240);
+    --t_background: #00000040;
+    --t_h_background: #33005f90;
+    --t_border: #00000060;
 }
 
 body {
-    background-color: var(--background);
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: var(--text_color);
 }
 
-#header {
-    font-size: 48px;
-    padding: 10px;
-    padding-top:0px;
-    color:var(--header_color);
+#header{
+    width: 100%;
+    border-bottom: 3px solid #00000040;
 }
 
-#main {
+    #header_img{
+        display: inline-block;
+        width: 300px;
+    }
+
+        #header_img img{
+            height: 70px;
+        }
+
+    #header_txt{
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 700px);
+    }
+
+        #header_txt p{
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 74px;
+            font-family: Mad_Hacker;
+            font-size: 42px;
+        }
+
+#main{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
+    padding:5px;   
 }
 
     .itemlist {
-        border: 3px solid var(--t_border);
         background-color: var(--t_background);
-        border-collapse: collapse;
-        border-radius: 10px;
+        border-radius: 15px;
         float: left;
         display: block;
-        margin-left: 10px;
-        margin-bottom: 10px;
+        border-collapse: collapse;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
 
     .itemlist th {
+        text-transform: uppercase;
+        font-family: Mad_Hacker;
         font-size: 24px;
         padding: 5px;
-        border-bottom: 3px solid var(--t_border);
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         background-color: var(--t_h_background);
     }
 
@@ -91,33 +117,33 @@ body {
         margin-bottom: 5px;
     }
 
+    /* Order portion */
     .orderlist {
-        border: 3px solid var(--t_border);
-        background-color: var(--t_background);
-        border-radius: 10px;
-        border-collapse: collapse;
-        float: left;
-        display: block;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
+            background-color: var(--t_background);
+            border-radius: 15px;
+            border-collapse: collapse;
+            float: left;
+            display: block;
+        }
 
     .orderlist th {
-        font-size: 24px;
         padding: 5px;
         border-bottom:3px solid var(--t_border);
         background-color: var(--t_h_background);
         /* width:300px; */
     }
 
-    .orderlist td {
-        font-size: 22px;
+    #order_title{
+        text-transform: uppercase;
+        font-family: Mad_Hacker;
+        font-size: 24px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        width:470px;
     }
 
-    .orderheader {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+    .orderlist td {
+        font-size: 22px;
     }
 
     .ordercounter {
@@ -136,10 +162,6 @@ body {
         border-radius: 8px;
     }
 
-    .ordertitle {
-        width:310px;
-    }
-
     .orderprice {
         width:100px;
         padding-right:5px;
@@ -150,6 +172,17 @@ body {
         border-top: 2px solid var(--t_border);
         text-align: right;
         font-weight: normal;
+    }
+
+    #total_text{
+        font-size: 10px;
+    }
+
+    #list_text{
+        text-transform: uppercase;
+        font-family: Mad_Hacker;
+        font-size: 20px;
+        border-top: 2px solid var(--t_border);
     }
 
     .ordertotalprice {
@@ -172,21 +205,21 @@ body {
         font-size: 18px !important;
     }
 
-    #reload {
-        text-align: center;
-        padding:5px;
-        border-top: 3px solid var(--t_border);
-        background-color: var(--t_h_background);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
+#reload {
+    text-align: center;
+    padding:5px;
+    border-top: 3px solid var(--t_border);
+    background-color: var(--t_h_background);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
-    #reload button{
-        background-color: rgb(255, 91, 91);
-        font-weight: bold;
-        font-size: 16px;
-        color:rgb(219, 219, 219);
-        padding: 8px 16px;
-        border: none;
-        border-radius: 6px;
-    }
+#reload button{
+    background-color: #ff5b5bc5;
+    font-weight: bold;
+    font-size: 16px;
+    color:rgb(219, 219, 219);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+}
