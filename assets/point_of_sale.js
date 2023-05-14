@@ -73,7 +73,7 @@ function posOrder(name, modifier){
         // Create order table
         var orderTable = "<table class='orderlist'>";
         // Add header
-        orderTable += "<tr><th class='orderheader' colspan='4'>Order</th></tr>";
+        orderTable += "<tr><th id='order_title' colspan='4'>Order</th></tr>";
         // For each item in orderobject
         for(item in orderObject){
             // Iterate through members to find item
@@ -135,7 +135,7 @@ function posOrder(name, modifier){
 
         // Create a total count of items to get
         // Add header for total items
-        orderTable += "<tr><th colspan='4'>Itemlist</th></tr>";
+        orderTable += "<tr><th colspan='4' id='list_text'>Itemlist</th></tr>";
         // Copy orderObject to add items from menus to
         const itemTotals = Object.assign({}, orderObject);
         // For each item in itemTotals

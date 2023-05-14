@@ -1,11 +1,6 @@
 {
     "Parts":{
         "type": "items",
-        "S Part":{
-            "description": "Single S Part",
-            "image": "s-part.png",
-            "price": 454
-        },
         "A Part":{
             "description": "Single A Part",
             "image": "a-part.png",
@@ -34,14 +29,6 @@
     },
     "1 Across":{
         "type": "combos",
-        "1 Across S":{
-            "description": "10 S Parts",
-            "image": "s-across.png",
-            "items":{
-                "S Part":10
-            },
-            "price":4537
-        },
         "1 Across A":{
             "description": "10 A Parts",
             "image": "a-across.png",

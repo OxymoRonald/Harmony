@@ -5,21 +5,16 @@
         <title>Harmony Repairs - Point Of Sale</title>
     </head>
     <body onLoad="main()">
-        <div id="header">Harmony Repairs POS</div>
+        <div id="header">
+            <div id="header_img"><img src="assets/logo.png"/></div>
+            <div id="header_txt"><p>Point of Sale</p></div>
+        </div>
         <div id="main">
             <div id="left_block">Left block to be replaced by javascript</div>
             <div id="right_block">
                 <table class='orderlist'>
-                    <tr><th colspan='4'>Order</th></tr>
-
-                    <tr>
-                        <td class="ordercounter">-</td>
-                        <td class="orderimage">&nbsp;</td>
-                        <td class="ordertitle">&nbsp;</td>
-                        <td class="orderprice">$ -</td>
-                    </tr>
-
-                    <tr><th colspan='3' class="ordertotal">Total</th><th class="ordertotalprice">$ -</th></tr>
+                    <tr><th colspan='4' id="order_title">Order</th></tr>
+                    <tr><td colspan="4" class="ordercounter">-</td></tr>
                     <tr><td colspan="4" id="reload"><button onClick="window.location.reload();">Reset</button></td></tr>
                 </table>
             </div>
