@@ -90,7 +90,7 @@
         "1 Day Wax":{
             "description": "Polish that lasts for 1 day",
             "image": "wax_1day.png",
-            "price": 100
+            "price": 150
         }
     },
     "Miscelaneous":{
